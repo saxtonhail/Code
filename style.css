@@ -1,0 +1,107 @@
+
+body {
+    margin: 0;
+    background-color: #ff1174;
+  }
+  h1 {
+    color: #1b1b1b;
+    margin: 0;
+  }
+  p {
+    font-family: "Arboria-Book";
+    color:#1b1b1b
+  }
+
+ /* NAVBAR 
+  /* Add a black background color to the top navigation */
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+    width: 100%;
+    margin: 0;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #F7CC46;
+    text-align: center;
+    padding: 14px 16px;
+    font-family: "Arboria-Bold";
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    color: rgb(255, 255, 255);
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    color: white;
+  }
+/* First Page */
+  .title {
+    font-family: "Arboria-Bold";
+    font-size: 1000%;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .landingpage1 {
+    padding-left: 5%;
+    display: flex;
+    flex-wrap: nowrap;
+    line-height: 0.9;
+  }
+
+  .abovetitle {
+    font-family: "Arboria-Book";
+    font-size: 1000%;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .toptext {
+    padding-top: 2%;
+    font-family: "Arboria-Book";
+    font-size: 350%;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+ 
+  .page1 {
+    background-color: #F7CC46;
+    background-image: url(/hjemmeside/img/Pasta2.png);
+    background-size: 680px;
+    background-position: right;
+    background-repeat: no-repeat;
+    min-height: 822px;
+  }
+  .flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-left: 5%;
+  }
+  
+  .flex-container > div {
+    background-color: #1b1b1b;
+    color: #f1f1f1;
+    width: 230px;
+    border-radius: 10px;
+    max-height: 50px;
+    margin: 10px;
+    align-items: center;
+    text-align: center;
+    line-height: 50px;
+    font-size: 26px;
+    font-family: "Arboria-Book";
+  }
+  .flex-container > img {
+    width: auto;
+    max-height: 50px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+  }

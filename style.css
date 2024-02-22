@@ -15,10 +15,11 @@ body {
  /* NAVBAR 
   /* Add a black background color to the top navigation */
 .topnav {
-    background-color: #333;
+    background-color: #1b1b1b;
     overflow: hidden;
     width: 100%;
     margin: 0;
+    position: fixed;
   }
   
   /* Style the links inside the navigation bar */
@@ -108,3 +109,31 @@ body {
     line-height: 75px;
     font-size: 30px;
   }
+
+/* PAGE 2!!! */
+  .page2 {
+    background-color: #F7CC46;
+    min-height: 500px;
+  }
+  .flex-container2 {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-left: 5%;
+    background-color: #1b1b1b;
+    justify-content: center;
+  }
+
+  .flex-container2 > div {
+    background-color: #282828;
+    color: #F7CC46;
+    width: 500%;
+    min-height: 120px;
+    margin: auto;
+    justify-self: auto;
+    text-align: center;
+    line-height: 120px;
+    font-size: 36px;
+    font-family: "Arboria-Black";
+    justify-content: center;
+  }
+  .row:nth-child(odd) {background: #1b1b1b;}

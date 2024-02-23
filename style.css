@@ -24,7 +24,7 @@ p {
 
 /* Style the links inside the navigation bar */
 .topnav a {
-  float: left;
+  float: left;;
   color: #F7CC46;
   text-align: center;
   padding: 14px 16px;
@@ -48,6 +48,13 @@ p {
   transition: all 0.5s;
   background-color: #F7CC46;
   border-bottom: 1px solid lightgray;
+}
+
+.logo {
+  width: auto;
+  max-height: 35px;
+  float: left;
+  padding: 5px 12px;
 }
 /* First Page!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! 417724172731285192151232161246 */
 .title {
@@ -181,7 +188,7 @@ p {
   display: flex;
   flex-wrap: nowrap;
   line-height: 80%;
-  margin-bottom: auto;
+  padding-bottom: 2%;
 }
 .paragraph2 {
   font-family: "Arboria-Book";
@@ -189,4 +196,48 @@ p {
   display: flex;
   flex-wrap: nowrap;
   line-height: 110%;
+}
+
+.page3 {
+  background-color: #1b1b1b;
+  max-height: calc(100vw - 32vh);
+}
+
+.headlinepage3 {
+  font-family: "Arboria-Bold";
+  font-size: calc(8vw + -2vh);
+  display: flex;
+  flex-wrap: nowrap;
+  line-height: 80%;
+  padding-top: 2%;
+  justify-content: center;
+  color: #F7CC46;
+}
+
+.circles {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 100vh;
+  max-height: calc(100vw - 32vh);
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.circleraw {
+  width: 10vw;
+  height: 10vw;
+  border-radius: 50%;
+  font-size: 50px;
+  color: #ff0000;
+  text-align: center;
+  background: #F7CC46;
+}
+.circlestep {
+  font-family: "Arboria-Bold";
+  font-size: calc(2vw + 2vh);
+  justify-content: center;
+  display: flex;
+  flex-wrap: nowrap;
+  line-height: 80%;
 }

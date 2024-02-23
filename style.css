@@ -68,7 +68,6 @@ p {
 
 .abovetitle {
   font-family: "Arboria-Book";
-  font-size: 1000%;
   display: flex;
   font-size: calc(9vw + -2vh);
 }
@@ -87,13 +86,14 @@ p {
   background-size: 40%;
   background-position: right;
   background-repeat: no-repeat;
-  min-height: 870px;
-  min-width: 800px;
+  max-height: calc(100vw - 20vh);
 }
 .flex-container {
   display: flex;
   flex-wrap: nowrap;
   padding-left: 5%;
+  size: calc(2.5vw + 0.5vh);
+  padding-bottom: calc(12.5vw + 5.5vh);
 }
 
 .flex-container > div {
@@ -121,12 +121,17 @@ p {
 /* PAGE 2!!! */
 .page2 {
   background-color: #F7CC46;
-  min-height: 500px;
+  background-image: url(/hjemmeside/img/Kvitttering.png);
+  background-size: 29%;
+  background-position: right;
+  background-position: 90%;
+  background-repeat: no-repeat;
+  max-height: calc(100vw - 32vh);
 }
+
 .flex-container2 {
   display: flex;
   flex-wrap: nowrap;
-  padding-left: 5%;
   background-color: #1b1b1b;
   justify-content: center;
 }
@@ -140,8 +145,48 @@ p {
   justify-self: auto;
   text-align: center;
   line-height: 120px;
-  font-size: 36px;
+  font-size: calc(2.5vw + 0vh);
   font-family: "Arboria-Black";
   justify-content: center;
 }
 .row:nth-child(odd) {background: #1b1b1b;}
+
+.flex-container3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  max-height: calc(100vw - 32vh);
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-left: 5%;
+}
+.flex-container3 > div {
+  height: auto;
+  justify-content: left;
+  align-items: center;
+  margin: 0;
+}
+
+.titlep2 {
+  font-family: "Arboria-Bold";
+  font-size: calc(8vw + -2vh);
+  display: flex;
+  flex-wrap: nowrap;
+  line-height: 80%;
+}
+.titlep3 {
+  font-family: "Arboria-Bold";
+  font-size: calc(8vw + -2vh);
+  display: flex;
+  flex-wrap: nowrap;
+  line-height: 80%;
+  margin-bottom: auto;
+}
+.paragraph2 {
+  font-family: "Arboria-Book";
+  font-size: calc(2vw + 0vh);
+  display: flex;
+  flex-wrap: nowrap;
+  line-height: 110%;
+}

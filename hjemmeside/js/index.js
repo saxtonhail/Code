@@ -1,12 +1,11 @@
 function scrollValue() {
-    var topnav = document.getElementById('topnav');
+    var navbar = document.getElementById('navbar');
     var scroll = window.scrollY;
-    if (scroll < 825) {
-        topnav.classList.remove('BgColour');
+    if (scroll < 900) {
+        navbar.classList.remove('BgColour');
     } else {
-        topnav.classList.add('BgColour');
+        navbar.classList.add('BgColour');
     }
 }
-
 
 window.addEventListener('scroll', scrollValue);

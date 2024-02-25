@@ -1,7 +1,6 @@
 
 body {
   margin: 0;
-  background-color: #ff1174;
 }
 h1 {
   color: #1b1b1b;
@@ -20,11 +19,12 @@ p {
   width: 100%;
   margin: 0;
   position: fixed;
+  color: #F7CC46;
 }
 
 /* Style the links inside the navigation bar */
 .topnav a {
-  float: left;;
+  float: left;
   color: #F7CC46;
   text-align: center;
   padding: 14px 16px;
@@ -48,6 +48,36 @@ p {
   transition: all 0.5s;
   background-color: #F7CC46;
   border-bottom: 1px solid lightgray;
+  
+}
+
+li {
+  float: left;
+  text-align: center;
+  padding: 14px 16px;
+  font-family: "Arboria-Bold";
+  text-decoration: none;
+  list-style-type: none;
+  font-size: 17px;
+}
+
+.navbar {
+    color: #F7CC46;
+    overflow: hidden;
+    width: 100%;
+    margin: 0;
+    position: fixed;
+    right: 0;
+    left: 0;
+    background-color: #1b1b1b;
+    list-style-type: none;
+}
+
+.BgColour {
+    color: #1b1b1b;
+    transition: all 1s;
+    background-color: #F7CC46;
+    border-bottom: 2px solid black;
 }
 
 .logo {
@@ -106,20 +136,24 @@ p {
 .flex-container > div {
   background-color: #1b1b1b;
   color: #f1f1f1;
-  width: 230px;
-  border-radius: 10px;
-  max-height: 50px;
-  margin: 10px;
-  align-items: center;
+  width: calc(9.5vw + 9.5vh);
+  height: calc(1.7vw + 1.7vh);
+  border-radius: calc(0.5vw + 0.5vh);
+  margin: 1%;
   text-align: center;
-  line-height: 50px;
-  font-size: 26px;
+  font-size: calc(1.3vw + 0.5vh);
+  padding-bottom: 0.4%;
   font-family: "Arboria-Book";
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
 }
 .flex-container > img {
   width: auto;
-  max-height: 50px;
-  margin: 10px;
+  height: calc(1.8vw + 1.8vh);
+  margin: 1%;
   text-align: center;
   line-height: 75px;
   font-size: 30px;
@@ -194,10 +228,28 @@ p {
   font-family: "Arboria-Book";
   font-size: calc(2vw + 0vh);
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   line-height: 110%;
+  max-width: 53.7%;
+  break-after: always;
 }
 
+.linebreak {
+  display: none;
+  padding-bottom: 2%;
+}
+
+.flex-containerappstore {
+  display: flex;
+  flex-wrap: nowrap;
+  padding-top: 1%;
+  size: calc(2.5vw + 2.5vh);
+}
+
+.flex-containerappstore > img {
+  width: auto;
+  height: calc(1.8vw + 1.8vh);
+}
 .page3 {
   background-color: #1b1b1b;
   max-height: calc(100vw - 32vh);
@@ -212,32 +264,153 @@ p {
   padding-top: 2%;
   justify-content: center;
   color: #F7CC46;
+  padding-bottom: 3%;
 }
 
 .circles {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  height: 100vh;
   max-height: calc(100vw - 32vh);
   margin-top: auto;
   margin-bottom: auto;
 }
 
 .circleraw {
-  width: 10vw;
-  height: 10vw;
+  width: 20vw;
+  height: 20vw;
   border-radius: 50%;
   font-size: 50px;
-  color: #ff0000;
+  color: #1b1b1b;
   text-align: center;
   background: #F7CC46;
+  margin: 2%;
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
 }
 .circlestep {
   font-family: "Arboria-Bold";
   font-size: calc(2vw + 2vh);
   justify-content: center;
+  line-height: 80%;
+  padding-bottom: 3%;
+}
+
+.circletext {
+  font-family: "Arboria-Book";
+  font-size: calc(1.1vw + 1.1vh);
+  justify-content: center;
+  line-height: 80%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.page3bottomtext {
+  font-family: "Arboria-Book";
+  font-size: calc(1.7vw + 1.7vh);
+  color: #F7CC46;
+  padding-bottom: 5%;
+  text-align: center;
+  padding-top: 2%;
+  flex-wrap: wrap;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.page4 {
+  background:url(/hjemmeside/img/tlf.png), no-repeat,
+  linear-gradient(
+    #F7CC46 0%,
+    #F7CC46 50%,
+    #1b1b1b 50%,
+    #1b1b1b 100%
+  );
+  height: calc(50vw - 16vh);
+  background-size: 101%;
+  background-attachment:local;
+  background-position-x: -2820%;
+  background-position-y: center;
+}
+
+.page4chunk {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding-top: 5%;
+  padding-left: 5%;
+}
+.uppertextp4 {
+  display: flex;
+  flex-direction: column;
+  font-family: "Arboria-Bold";
+  font-size: calc(5vw + -2vh);
   display: flex;
   flex-wrap: nowrap;
   line-height: 80%;
+}
+
+.appstoreknap {
+  width:fit-content;
+  height: calc(4vw + -2vh);
+  padding-top: 1%;
+}
+
+.lowertextp4title {
+  display: flex;
+  flex-direction: column;
+  font-family: "Arboria-Bold";
+  font-size: calc(5vw + -2vh);
+  display: flex;
+  flex-wrap: nowrap;
+  line-height: 80%;
+  color:#F7CC46;
+}
+
+.lowertextp4 {
+  display: flex;
+  flex-direction: column;
+  font-family: "Arboria-Book";
+  font-size: calc(2vw + 0vh);
+  display: flex;
+  flex-wrap: wrap;
+  line-height: 90%;
+  color: #F7CC46;
+  max-width: 40%;
+}
+
+.flex-containerp4 {
+  display: flex;
+  flex-wrap: nowrap;
+  size: calc(2.5vw + 0.5vh);
+}
+
+.flex-containerp4 > div {
+  background-color: #F7CC46;
+  color: #1b1b1b;
+  width: calc(9.5vw + 9.5vh);
+  height: calc(1.7vw + 1.7vh);
+  border-radius: calc(0.5vw + 0.5vh);
+  margin-top: 1%;
+  text-align: center;
+  font-size: calc(1.3vw + 0.5vh);
+  padding-bottom: 0.4%;
+  font-family: "Arboria-Book";
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
+
+.page4chunklower {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding-top: 8%;
+  padding-left: 5%;
 }

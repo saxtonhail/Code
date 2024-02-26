@@ -11,37 +11,7 @@ p {
   color:#1b1b1b
 }
 
-/* NAVBAR 
-/* Add a black background color to the top navigation */
-.topnav {
-  background-color: #1b1b1b;
-  overflow: hidden;
-  width: 100%;
-  margin: 0;
-  position: fixed;
-  color: #F7CC46;
-}
-
-/* Style the links inside the navigation bar */
-.topnav a {
-  float: left;
-  color: #F7CC46;
-  text-align: center;
-  padding: 14px 16px;
-  font-family: "Arboria-Bold";
-  text-decoration: none;
-  font-size: 17px;
-}
-
-/* Change the color of links on hover */
-.topnav a:hover {
-  color: rgb(255, 255, 255);
-}
-
-/* Add a color to the active/current link */
-.topnav a.active {
-  color: white;
-}
+/* NAVBAR */
 
 .BgColour {
   color: black;
@@ -51,10 +21,16 @@ p {
   
 }
 
+.liste {
+  display: flex;
+  align-items: center;
+  padding-left: 2%;
+}
+
 li {
   float: left;
   text-align: center;
-  padding: 14px 16px;
+  padding: 0.05% 16px;
   font-family: "Arboria-Bold";
   text-decoration: none;
   list-style-type: none;
@@ -84,7 +60,9 @@ li {
   width: auto;
   max-height: 35px;
   float: left;
-  padding-top: -105px;
+  padding-bottom: -5%;
+  display: flex;
+  align-items: center;
 }
 /* First Page!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! 417724172731285192151232161246 */
 .title {
@@ -142,7 +120,7 @@ li {
   margin: 1%;
   text-align: center;
   font-size: calc(1.3vw + 0.5vh);
-  padding-bottom: 0.4%;
+  padding-bottom: 0%;
   font-family: "Arboria-Book";
   flex-direction: row;
   display: flex;
@@ -303,7 +281,7 @@ li {
   font-family: "Arboria-Book";
   font-size: calc(1.1vw + 1.1vh);
   justify-content: center;
-  line-height: 80%;
+  line-height: 90%;
   padding-left: 5%;
   padding-right: 5%;
 }
@@ -312,7 +290,7 @@ li {
   font-family: "Arboria-Book";
   font-size: calc(1.7vw + 1.7vh);
   color: #F7CC46;
-  padding-bottom: 5%;
+  padding-bottom: 2%;
   text-align: center;
   padding-top: 2%;
   flex-wrap: wrap;
@@ -397,7 +375,7 @@ li {
   margin-top: 1%;
   text-align: center;
   font-size: calc(1.3vw + 0.5vh);
-  padding-bottom: 0.4%;
+  padding-bottom: 0%;
   font-family: "Arboria-Book";
   flex-direction: row;
   display: flex;
@@ -413,4 +391,30 @@ li {
   align-content: center;
   padding-top: 8%;
   padding-left: 5%;
+}
+
+.flex-containerrecipes {
+  display: flex;
+  flex-wrap: nowrap;
+  size: calc(2.5vw + 0.5vh);
+  justify-content: center;
+  padding-bottom: 3%;
+}
+
+.flex-containerrecipes > div {
+  background-color: #F7CC46;
+  color: #1b1b1b;
+  width: calc(11vw + 11vh);
+  height: calc(1.7vw + 1.7vh);
+  border-radius: calc(0.5vw + 0.5vh);
+  margin: 1%;
+  text-align: center;
+  font-size: calc(1.3vw + 0.5vh);
+  padding-bottom: 0%;
+  font-family: "Arboria-Bold";
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
 }
